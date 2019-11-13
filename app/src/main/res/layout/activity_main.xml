@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg_gradient">>
+
+    <Button
+        android:id="@+id/searchButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:onClick="search"
+        android:text="@string/search"
+        app:layout_constraintEnd_toEndOf="@+id/cityNameTextId"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/cityNameTextId"
+        app:layout_constraintTop_toBottomOf="@+id/cityNameTextId" />
+
+    <TextView
+        android:id="@+id/resulttextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:textColor="#B8AA00"
+        app:layout_constraintEnd_toEndOf="@+id/searchButtonId"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="@+id/searchButtonId"
+        app:layout_constraintTop_toBottomOf="@+id/searchButtonId" />
+
+    <EditText
+        android:id="@+id/cityNameTextId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_city_name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
